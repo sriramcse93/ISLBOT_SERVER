@@ -1,0 +1,333 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- main_category
+- mood_great
+- mood_unhappy
+- bot_challenge
+- outlook_closed
+- outlook_xml_error
+- outlook_word
+- outlook_excel
+- outlook_newfile
+- outlook_recovery
+- internet_explorer_PDF
+- internet_explorer_popup
+- internet_explorer_clean
+- mobility
+- java_solution
+#- outlook_issue
+- printer_queue
+- printer_spooler
+#- printer_issue
+- outlook_powerpoint
+- Temp_file_C
+#- system
+- low_memory
+- adobe_issue
+- system_slow
+- account_locked
+- critix_issue
+- browser_issue
+- internet_explorer
+- outlook_category
+- printer_category
+- system_category
+- system_slow_category
+- internet_explorer_category
+- mobility_category
+- create_ticket_for_outlook_closed
+- create_ticket_for_outlook_xml_error
+- create_ticket_for_outlook_word
+- create_ticket_for_outlook_excel
+- create_ticket_for_outlook_powerpoint
+- create_ticket_for_outlook_newfile
+- create_ticket_for_outlook_recovery
+- create_ticket_for_printer_queue
+- create_ticket_for_printer_spooler
+- create_ticket_for_Temp_file_C
+- create_ticket_for_low_memory
+- create_ticket_for_adobe_issue
+- create_ticket_for_system_slow
+- create_ticket_for_account_locked
+- create_ticket_for_critix_issue
+- create_ticket_for_browser_issue
+- create_ticket_for_internet_explorer
+- create_ticket_for_internet_explorer_PDF
+- create_ticket_for_internet_explorer_popup
+- create_ticket_for_internet_explorer_clean
+- create_ticket_for_mobility
+- create_ticket_for_java_solution
+- all_category
+- internet
+slots:
+  username:
+    type: text
+    initial_value: "m.naresh@inspirisys.com"
+responses:
+  utter_greet:
+  - text: Hi, I am ISL bot assistant. How may I help you now?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+#  utter_outlook_issue:
+#  - text: what type of issue facing in outlook
+#  utter_outlook_closed:
+#  - text: Please click the below link to solve outlook close issue
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+#  utter_outlook_xml_error:
+#  - text: Please click the below link to solve outlook xml issue
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+#  utter_outlook_word:
+#  - text: Please click the below link to solve outlook word issue
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+#  utter_outlook_excel:
+#  - text: Please click the below link to solve outlook excel issue
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+#  utter_outlook_powerpoint:
+#  - text: Please click the below link to solve outlook powerpoint issue
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+#  utter_outlook_newfile:
+#  - text: Please click the below link to solve create new PST archive file issue
+#    custom:
+#      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport15.exe
+#  utter_outlook_recovery:
+#  - text: Please click the below link to recover deleted email issue
+#    custom:
+#      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport67.exe
+#  utter_printer_issue:
+#  - text: what type of issue facing in printer
+#  utter_printer_queue:
+#  - text: Please click the below link to solve the printer queue issue
+#    custom:
+#      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport131.exe
+#  utter_printer_spooler:
+#  - text: Please click the below link to solve the printer spooler issue
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+  utter_default:
+  - text: Sorry I didn't understand..
+#  utter_system:
+#  - text: what type of issue facing in system
+#  utter_low_memory:
+#  - text: Please click the below link to solve the out of memory issue
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+#  utter_adobe_issue:
+#  - text: Please click the below link to solve the adobe reader permission denied
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+#  utter_system_slow:
+#  - text: Please click the below link to solve the system slow issue
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+#  utter_account_locked:
+#  - text: Please click the below link to solve the account locked issue
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+#  utter_critix_issue:
+#  - text: Please click the below link to solve the critx open issue
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+#  utter_browser_issue:
+#  - text: Please click the below link to solve the browser issue
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+#  utter_internet_explorer:
+#  - text: Please click the below link to set the internet explorer as default
+#    custom:
+#      link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+#  utter_internet_explorer_PDF:
+#  - text: Please click the below link to enable the PDF reader in the browser
+#    custom:
+#      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport28.exe
+#  utter_internet_explorer_popup:
+#  - text: Please click the below link to enable the Pop-Ups in internet explorer
+#    custom:
+#      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport207.exe
+#  utter_internet_explorer_clean:
+#  - text: Please click the below link to clean up the internet explorer
+#    custom:
+#      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport213.exe
+#  utter_mobility:
+#  - text: Please click the below link to clear the temp files
+#    custom:
+#      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport205.exe
+#  utter_Temp_file_C:
+#  - text: Please click the below link to Free Up C Drive Space Issue
+#    custom:
+#      link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport693.exe
+#  utter_java_solution:
+#    - text: Please click the below link for solution to java Issue
+#      custom:
+#        link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport22.exe
+  utter_outlook_category:
+  - text: Please choose from the below issue
+    custom:
+      dropdowns:
+      - title: Outlook closed when minimized
+        payload: /outlook_closed
+        link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+      - title: Cannot Start Microsoft Outlook getting Invalid XML error
+        payload: /outlook_xml_error
+        link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+      - title: Cannot open the word attachment in Microsoft outlook
+        payload: /outlook_word
+        link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+      - title: Cannot open the Microsoft Excel attachment in outlook
+        payload: /outlook_excel
+        link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+      - title: Cannot open the PowerPoint attachment in Microsoft outlook
+        payload: /outlook_powerpoint
+        link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+      - title: How to create a new PST Archive File
+        payload: /outlook_newfile
+        link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport15.exe
+      - title: How to recover deleted Email from Email Server
+        payload: /outlook_recovery
+        link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport67.exe
+  utter_printer_category:
+  - text: Please choose from the below issue
+    custom:
+      dropdowns:
+      - title: Print jobs stuck in print Queue
+        payload: /printer_queue
+        link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport131.exe
+      - title: Getting error Printer Spooler Service is not working
+        payload: /printer_spooler
+        link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+  utter_system_category:
+  - text: Please choose from the below issue
+    custom:
+      dropdowns:
+      - title: Running out of memory in computer
+        payload: /low_memory
+        link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+      - title: Access denied in Adobe Reader
+        payload: /adobe_issue
+        link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+  utter_system_slow_category:
+  - text: Please choose from the below issue
+    custom:
+      dropdowns:
+      - title: Account gets locked frequently
+        payload: /account_locked
+        link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+      - title: Unable to Open Critix
+        payload: /critix_issue
+        link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+      - title: Unable to browse any website
+        payload: /browser_issue
+        link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+      - title: Set Internet Explorer as a Default Browser
+        payload: /internet_explorer
+        link: http://anakage.in/brillio/Heal-It%20installler%20common.msi
+  utter_internet_explorer_category:
+  - text: Please choose from the below issue
+    custom:
+      dropdowns:
+      - title: How to enable the adobe PDF reader to open in browser
+        payload: /internet_explorer_PDF
+        link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport28.exe
+      - title: Scripts to allow pop-ups in internet explorer
+        payload: /internet_explorer_popup
+        link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport207.exe
+      - title: How to clean up the internet explorer
+        payload: /internet_explorer_clean
+        link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport213.exe
+  utter_mobility_category:
+  - text: Please choose from the below issue
+    custom:
+      dropdowns:
+      - title: To clear the user temp files
+        payload: /mobility
+        link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport205.exe
+      - title: Clean Temporary Files from C Drive
+        payload: /Temp_file_C
+        link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport693.exe
+      - title: Getting error in java installation
+        payload: /java_solution
+        link: http://coe.eusautomation.inspirisys.org/uploads/solutions/Chennai/techselfsupport22.exe
+  utter_all_category:
+  - text: Please select the issue.
+    buttons:
+    - title: Outlook
+      payload: /outlook_category
+    - title: Printer
+      payload: /printer_category
+    - title: System Memory
+      payload: /system_category
+    - title: System Slow
+      payload: /system_slow_category
+    - title: Internet Explorer
+      payload: /internet_explorer_category
+    - title: Mobility
+      payload: /mobility_category
+actions:
+#- utter_outlook_closed
+#- utter_outlook_xml_error
+#- utter_outlook_word
+#- utter_outlook_excel
+#- utter_outlook_newfile
+#- utter_outlook_recovery
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+#- utter_printer_queue
+#- utter_printer_spooler
+#- utter_outlook_issue
+#- utter_printer_issue
+- utter_default
+#- utter_outlook_powerpoint
+#- utter_Temp_file_C
+#- utter_system
+#- utter_low_memory
+#- utter_adobe_issue
+#- utter_system_slow
+#- utter_account_locked
+#- utter_critix_issue
+#- utter_browser_issue
+#- utter_internet_explorer
+#- utter_internet_explorer_PDF
+#- utter_internet_explorer_popup
+#- utter_internet_explorer_clean
+#- utter_mobility
+#- utter_java_solution
+- utter_outlook_category
+- utter_printer_category
+- utter_system_category
+- utter_system_slow_category
+- utter_internet_explorer_category
+- utter_mobility_category
+- utter_all_category
+- action_get_incidents
+- action_adobe_incidents
+- action_archive_incidents
+- action_cleantemp_incidents
+- action_cleanup_incidents
+- action_popup_incidents
+- action_recoveremail_incidents
+- action_printer_incidents
+- action_cdrivespace_incidents
+- action_javasolution_incidents
